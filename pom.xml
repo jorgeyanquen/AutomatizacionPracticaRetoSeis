@@ -118,8 +118,10 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${serenity-version}</version>
                 <configuration>
-                    <source>${maven.compiler.source}</source>
+                    <source>22</source>
                     <source>${maven.compiler.target}</source>
+                    <target>22</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
             <plugin>
