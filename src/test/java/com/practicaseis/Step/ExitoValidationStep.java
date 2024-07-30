@@ -12,5 +12,6 @@ public class ExitoValidationStep {
     @Step
     public void login_exito(){
         exitoFormValidationPage.open();
+
     }
 }
