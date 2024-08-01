@@ -18,6 +18,16 @@ public class ExitoMenuPage extends PageObject {
     @FindBy(xpath = "//*[@id=\"__next\"]/header/section/div/div[1]/div[1]/button/span")
     public WebElement lblFormValidation;
 
+    //Menu forms
+    @FindBy(id = "desktop-store-filter-button--3")
+    public WebElement menuForms;
+
+
+    public void menuFormValidation(){
+        menuForms.click();
+    }
+
+
     public void menu(String datoPrueba){
         txtmenuForms.click();
         txtmenuForms.clear();
@@ -26,9 +36,9 @@ public class ExitoMenuPage extends PageObject {
 
     public void botonbuscar(){
         btnbuscar.click();
-      //  String strMensaje = lblFormValidation.getText();
-       // assertThat(strMensaje, containsString("Menú"));
+
     }
+
 
 
 }
